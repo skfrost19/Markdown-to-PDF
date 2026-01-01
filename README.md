@@ -1,8 +1,8 @@
-# Markdown to PDF
+# Markdown to PDF Export
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/ShahilKumar.markdown-to-pdf.svg)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/ShahilKumar.markdown-to-pdf)
-![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/ShahilKumar.markdown-to-pdf.svg)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/ShahilKumar.md-to-pdf-export.svg)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/ShahilKumar.md-to-pdf-export)
+![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/ShahilKumar.md-to-pdf-export.svg)
 ![License](https://img.shields.io/github/license/skfrost19/Markdown-to-PDF.svg)
 
 Convert Markdown files to beautiful PDF documents with a single click in Visual Studio Code.
@@ -27,7 +27,7 @@ Convert Markdown files to beautiful PDF documents with a single click in Visual 
 
 ## 🚀 Installation
 
-1. Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ShahilKumar.markdown-to-pdf)
+1. Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ShahilKumar.md-to-pdf-export)
 2. Open any `.md` or `.markdown` file
 3. Right-click and select **"Export as PDF"**
 
