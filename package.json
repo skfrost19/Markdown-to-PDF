@@ -2,7 +2,7 @@
     "name": "md-to-pdf-export",
     "displayName": "Markdown to PDF Export",
     "description": "Convert Markdown files to PDF with a single click - supports syntax highlighting, images, tables, and GitHub-style formatting",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "ShahilKumar",
     "author": {
         "name": "Shahil Kumar",
