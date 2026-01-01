@@ -1,0 +1,133 @@
+{
+    "name": "markdown-to-pdf",
+    "displayName": "Markdown to PDF",
+    "description": "Convert Markdown files to PDF with a single click - supports syntax highlighting, images, tables, and GitHub-style formatting",
+    "version": "1.0.0",
+    "publisher": "ShahilKumar",
+    "author": {
+        "name": "Shahil Kumar",
+        "url": "https://github.com/skfrost19"
+    },
+    "license": "MIT",
+    "icon": "assets/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/skfrost19/Markdown-to-PDF.git"
+    },
+    "bugs": {
+        "url": "https://github.com/skfrost19/Markdown-to-PDF/issues"
+    },
+    "homepage": "https://github.com/skfrost19/Markdown-to-PDF#readme",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other",
+        "Formatters"
+    ],
+    "keywords": [
+        "markdown",
+        "pdf",
+        "export",
+        "converter",
+        "document"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "markdown-to-pdf.export",
+                "title": "Export as PDF",
+                "icon": "$(file-pdf)"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "markdown-to-pdf.export",
+                    "when": "resourceLangId == markdown",
+                    "group": "navigation"
+                }
+            ],
+            "editor/title": [
+                {
+                    "command": "markdown-to-pdf.export",
+                    "when": "resourceLangId == markdown",
+                    "group": "navigation"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "markdown-to-pdf.export",
+                    "when": "resourceLangId == markdown",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "Markdown to PDF",
+            "properties": {
+                "markdown-to-pdf.headerTemplate": {
+                    "type": "string",
+                    "default": "",
+                    "description": "HTML template for the print header"
+                },
+                "markdown-to-pdf.footerTemplate": {
+                    "type": "string",
+                    "default": "<div style=\"font-size: 10px; text-align: center; width: 100%;\"><span class=\"pageNumber\"></span> / <span class=\"totalPages\"></span></div>",
+                    "description": "HTML template for the print footer"
+                },
+                "markdown-to-pdf.displayHeaderFooter": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Display header and footer"
+                },
+                "markdown-to-pdf.margin": {
+                    "type": "object",
+                    "default": {
+                        "top": "20mm",
+                        "bottom": "20mm",
+                        "left": "15mm",
+                        "right": "15mm"
+                    },
+                    "description": "Page margins"
+                },
+                "markdown-to-pdf.format": {
+                    "type": "string",
+                    "default": "A4",
+                    "enum": [
+                        "A3",
+                        "A4",
+                        "A5",
+                        "Legal",
+                        "Letter",
+                        "Tabloid"
+                    ],
+                    "description": "Paper format"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts"
+    },
+    "devDependencies": {
+        "@types/markdown-it": "^13.0.7",
+        "@types/node": "^20.10.0",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^6.13.0",
+        "@typescript-eslint/parser": "^6.13.0",
+        "eslint": "^8.54.0",
+        "typescript": "^5.3.2"
+    },
+    "dependencies": {
+        "highlight.js": "^11.9.0",
+        "markdown-it": "^14.0.0",
+        "puppeteer": "^21.6.0"
+    }
+}
