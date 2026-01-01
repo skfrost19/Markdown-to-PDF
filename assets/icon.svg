@@ -3,13 +3,13 @@
   <rect width="128" height="128" rx="16" fill="#2D3748"/>
   
   <!-- Markdown symbol (M) -->
-  <path d="M20 90V38h12l14 26 14-26h12v52h-12V58l-14 24-14-24v32H20z" fill="#E2E8F0"/>
+  <path d="M12 90V38h12l14 26 14-26h12v52h-12V58l-14 24-14-24v32H12z" fill="#E2E8F0"/>
   
-  <!-- Arrow -->
-  <path d="M72 64l12-12v8h16v8H84v8L72 64z" fill="#68D391"/>
+  <!-- Arrow pointing right (MD -> PDF) -->
+  <path d="M68 64l10 10v-6h12v-8H78v-6L68 64z" fill="#68D391"/>
   
   <!-- PDF document -->
-  <g transform="translate(88, 38)">
+  <g transform="translate(92, 38)">
     <rect width="28" height="36" rx="2" fill="#FC8181"/>
     <rect x="4" y="6" width="20" height="2" rx="1" fill="#2D3748"/>
     <rect x="4" y="12" width="16" height="2" rx="1" fill="#2D3748"/>
